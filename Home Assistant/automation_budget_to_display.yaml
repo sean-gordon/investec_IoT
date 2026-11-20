@@ -1,5 +1,5 @@
 # Paste into Settings > Automations > Create > Edit in YAML.
-# Sends whatever your display script returns to the Investec Outlook display.
+# Sends whatever your display script returns to the Investec Outlook display using Jinja.
 # Check the two entity IDs under Settings > Devices and adjust if different.
 alias: Investec display value to screen
 mode: restart
