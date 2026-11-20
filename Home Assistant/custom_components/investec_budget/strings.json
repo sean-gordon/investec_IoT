@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Investec Programmable Banking",
+        "description": "Enter the API credentials from Investec Online > Programmable Banking > Manage API keys. Tick sandbox to test with Investec's sandbox keys.",
+        "data": {
+          "client_id": "Client ID",
+          "client_secret": "Client secret",
+          "api_key": "API key",
+          "sandbox": "Use sandbox"
+        }
+      },
+      "settings": {
+        "title": "Investec Display",
+        "data": {
+          "accounts": "Accounts to include",
+          "payday": "Payday (day of month; 1 = calendar month)",
+          "weekend_shift": "Move weekend paydays to the Friday before",
+          "template": "Display script (Jinja template, 4 characters max)"
+        },
+        "description": "Display script: a Home Assistant (Jinja) template that returns up to 4 characters. Variables: balance, live_balance, test_mode, accounts, transactions, spent_today, spent_cycle, days_to_payday, cycle_start, payday, today. The Investec Display page in the sidebar has a live preview, examples and your own variables."
+      }
+    },
+    "error": {
+      "invalid_auth": "Investec rejected the credentials.",
+      "cannot_connect": "Could not reach the Investec API.",
+      "no_accounts": "No accounts were returned for these credentials.",
+      "invalid_template": "The template has a syntax error."
+    },
+    "abort": {
+      "already_configured": "These credentials are already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Investec Display",
+        "data": {
+          "accounts": "Accounts to include",
+          "payday": "Payday (day of month; 1 = calendar month)",
+          "weekend_shift": "Move weekend paydays to the Friday before",
+          "template": "Display script (Jinja template, 4 characters max)"
+        },
+        "description": "Display script: a Home Assistant (Jinja) template that returns up to 4 characters. Variables: balance, live_balance, test_mode, accounts, transactions, spent_today, spent_cycle, days_to_payday, cycle_start, payday, today. The Investec Display page in the sidebar has a live preview, examples and your own variables."
+      }
+    },
+    "abort": {
+      "cannot_connect": "Could not reach the Investec API. Try again shortly."
+    },
+    "error": {
+      "invalid_template": "The template has a syntax error."
+    }
+  }
+}

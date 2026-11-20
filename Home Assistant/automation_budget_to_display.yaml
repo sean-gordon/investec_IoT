@@ -1,0 +1,21 @@
+# Paste into Settings > Automations > Create > Edit in YAML.
+# Sends whatever your display script returns to the Investec Outlook display.
+# Check the two entity IDs under Settings > Devices and adjust if different.
+alias: Investec display value to screen
+mode: restart
+trigger:
+  - trigger: state
+    entity_id: sensor.investec_budget_display_value
+  - trigger: homeassistant
+    event: start
+  - trigger: time_pattern
+    minutes: "/10"
+condition:
+  - condition: template
+    value_template: "{{ states('sensor.investec_budget_display_value') not in ['unknown', 'unavailable', ''] }}"
+action:
+  - action: text.set_value
+    target:
+      entity_id: text.investec_outlook_display
+    data:
+      value: "{{ states('sensor.investec_budget_display_value') }}"

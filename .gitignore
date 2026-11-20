@@ -1,0 +1,7 @@
+# ESPHome secrets (copy secrets.example.yaml to secrets.yaml)
+secrets.yaml
+.esphome/
+
+# Python
+__pycache__/
+*.pyc

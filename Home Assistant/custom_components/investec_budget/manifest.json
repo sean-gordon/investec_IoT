@@ -1,0 +1,19 @@
+{
+  "domain": "investec_budget",
+  "name": "Investec Display",
+  "codeowners": [
+    "@sean-gordon"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "frontend",
+    "http",
+    "panel_custom",
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/sean-gordon/investec_IoT/blob/main/docs/GUIDE.md",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/sean-gordon/investec_IoT/issues",
+  "requirements": [],
+  "version": "0.5.3"
+}

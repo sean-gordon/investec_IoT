@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 760" font-family="Segoe UI, Arial, sans-serif" font-size="13">
+<rect width="1300" height="760" fill="#fff"/>
+<text x="30" y="38" font-size="22" font-weight="bold">Investec Outlook - simplest build (TM1637 module)</text>
+<text x="30" y="60" fill="#555">ESP32 30-pin DevKit + TM1637 4-digit 0.35in module (Micro Robotics TM1637-035D-YEL) + B3F button. USB power only. No 12V, no transistors, no resistors.</text>
+
+<!-- breadboard -->
+<rect x="30" y="90" width="900" height="420" rx="10" fill="#f4efe4" stroke="#bbb"/>
+<rect x="30" y="292" width="900" height="16" fill="#e2dccd"/>
+<line x1="50" y1="110" x2="910" y2="110" stroke="#1f6feb" stroke-width="2"/><text x="915" y="114" font-size="11" fill="#1f6feb">– GND rail</text>
+<line x1="50" y1="490" x2="910" y2="490" stroke="#1f6feb" stroke-width="2"/><text x="915" y="494" font-size="11" fill="#1f6feb">– GND rail</text>
+<g fill="#bbb"><circle cx="60" cy="150" r="2"/></g>
+
+<!-- ESP32 -->
+<rect x="80" y="170" width="560" height="260" rx="8" fill="#14213d" stroke="#000"/>
+<text x="360" y="295" text-anchor="middle" fill="#fff" font-weight="bold" font-size="15">ESP32-WROOM-32 DevKit (30-pin)</text>
+<text x="360" y="315" text-anchor="middle" fill="#ffd54a" font-size="12">straddles the centre gap · USB 5V power</text>
+<rect x="60" y="275" width="26" height="50" rx="3" fill="#ccc" stroke="#555"/><text x="73" y="305" text-anchor="middle" font-size="9" transform="rotate(-90 73 302)">USB</text>
+<g font-size="10" fill="#fff" text-anchor="middle">
+<text x="110" y="200">VIN</text><text x="145" y="200" fill="#9f9">GND</text><text x="180" y="200">D13</text><text x="215" y="200">D12</text><text x="250" y="200">D14</text><text x="285" y="200">D27</text><text x="320" y="200">D26</text><text x="355" y="200">D25</text><text x="390" y="200">D33</text><text x="425" y="200" fill="#f9c">D32</text><text x="460" y="200">D35</text><text x="495" y="200">D34</text><text x="530" y="200">VN</text><text x="565" y="200">VP</text><text x="600" y="200">EN</text>
+<text x="110" y="412" fill="#f88">3V3</text><text x="145" y="412" fill="#9f9">GND</text><text x="180" y="412">D15</text><text x="215" y="412">D2</text><text x="250" y="412">D4</text><text x="285" y="412">RX2</text><text x="320" y="412">TX2</text><text x="355" y="412">D5</text><text x="390" y="412" fill="#ff0">D18</text><text x="425" y="412" fill="#7df">D19</text><text x="460" y="412">D21</text><text x="495" y="412">RX0</text><text x="530" y="412">TX0</text><text x="565" y="412">D22</text><text x="600" y="412">D23</text></g>
+<g fill="#e0b000"><rect x="105" y="176" width="10" height="10"/><rect x="140" y="176" width="10" height="10"/><rect x="420" y="176" width="10" height="10"/>
+<rect x="105" y="416" width="10" height="10"/><rect x="140" y="416" width="10" height="10"/><rect x="385" y="416" width="10" height="10"/><rect x="420" y="416" width="10" height="10"/></g>
+
+<!-- button -->
+<rect x="700" y="130" width="60" height="60" rx="6" fill="#222"/><circle cx="730" cy="160" r="15" fill="#555"/>
+<text x="730" y="210" text-anchor="middle" font-size="12" font-weight="bold">B3F button</text>
+
+<!-- TM1637 module (off-board) -->
+<rect x="990" y="250" width="270" height="150" rx="8" fill="#1b5e20" stroke="#000"/>
+<rect x="1010" y="270" width="230" height="80" rx="4" fill="#111"/>
+<text x="1125" y="322" text-anchor="middle" fill="#ffd54a" font-size="34" font-family="Consolas, monospace" font-weight="bold">8.8:8.8</text>
+<text x="1125" y="392" text-anchor="middle" fill="#fff" font-size="11">TM1637 module</text>
+<g fill="#e0b000"><rect x="995" y="360" width="10" height="10"/><rect x="995" y="340" width="10" height="10"/><rect x="995" y="320" width="10" height="10"/><rect x="995" y="300" width="10" height="10"/></g>
+<g font-size="11" font-weight="bold" fill="#fff"><text x="1012" y="309">CLK</text><text x="1012" y="329">DIO</text><text x="1012" y="349">VCC</text><text x="1012" y="369">GND</text></g>
+
+<!-- wires -->
+<g fill="none" stroke-width="3.5" stroke-linecap="round">
+<polyline stroke="#000" points="145,176 145,110"/>
+<polyline stroke="#e91e63" points="425,176 425,150 700,150"/>
+<polyline stroke="#000" points="760,170 800,170 800,110"/>
+<polyline stroke="#ffb300" points="390,426 390,560 960,560 960,305 995,305"/>
+<polyline stroke="#1e88e5" points="425,426 425,580 970,580 970,325 995,325"/>
+<polyline stroke="#e53935" points="110,426 110,600 980,600 980,345 995,345"/>
+<polyline stroke="#000" points="145,426 145,490"/>
+<polyline stroke="#000" points="300,490 300,620 990,620 990,365 995,365"/></g>
+<g fill="#000"><circle cx="145" cy="110" r="4"/><circle cx="800" cy="110" r="4"/><circle cx="145" cy="490" r="4"/><circle cx="300" cy="490" r="4"/></g>
+
+<!-- table -->
+<rect x="30" y="645" width="1240" height="100" rx="6" fill="#f7f7f7" stroke="#bbb"/>
+<text x="45" y="668" font-weight="bold">Wiring (4 jumpers to the module + 2 for the button + 2 ground links)</text>
+<g font-size="13">
+<text x="45" y="692"><tspan fill="#e53935" font-weight="bold">■</tspan> ESP32 3V3 → module VCC</text>
+<text x="45" y="714"><tspan font-weight="bold">■</tspan> ESP32 GND → GND rail → module GND</text>
+<text x="380" y="692"><tspan fill="#ffb300" font-weight="bold">■</tspan> ESP32 D18 (GPIO18) → module CLK</text>
+<text x="380" y="714"><tspan fill="#1e88e5" font-weight="bold">■</tspan> ESP32 D19 (GPIO19) → module DIO</text>
+<text x="750" y="692"><tspan fill="#e91e63" font-weight="bold">■</tspan> ESP32 D32 (GPIO32) → button leg 1</text>
+<text x="750" y="714"><tspan font-weight="bold">■</tspan> button leg 2 → GND rail</text>
+<text x="45" y="736" fill="#555" font-size="12">Use 3V3, not VIN, so the module's signal levels match the ESP32. Module plugs in with female-female jumpers. Shows GO, LO, SOS, Err on 4 digits.</text></g>
+</svg>
