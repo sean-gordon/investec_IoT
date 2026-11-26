@@ -25,11 +25,11 @@ https://git.wethegordons.co.za/seangordon/investec_IoT
 ![Investec IoT demo: the 4-digit display on the desk, updating from the Investec account](demo/investec_iot_demo_closeup.gif)
 
 #### Built on a prototype board
-<img width="1061" height="832" alt="IMG_1049" src="https://github.com/user-attachments/assets/100ca85f-30e8-455e-accb-2cb1d3a2c7c5" />
+<img width="1061" height="632" alt="IMG_1049" src="https://github.com/user-attachments/assets/100ca85f-30e8-455e-accb-2cb1d3a2c7c5" />
 
 
 ## Homeassistant
-<img width="1061" height="432" alt="image" src="https://github.com/user-attachments/assets/576333fc-34a8-4762-9d86-03f4807c6e8f" />
+<img width="1061" height="832" alt="image" src="https://github.com/user-attachments/assets/576333fc-34a8-4762-9d86-03f4807c6e8f" />
 
 
 ## Write your own, or start from an example
