@@ -29,7 +29,7 @@ https://git.wethegordons.co.za/seangordon/investec_IoT
 
 
 ## Homeassistant
-<img width="1061" height="832" alt="image" src="https://github.com/user-attachments/assets/576333fc-34a8-4762-9d86-03f4807c6e8f" />
+<img width="1061" height="632" alt="image" src="https://github.com/user-attachments/assets/576333fc-34a8-4762-9d86-03f4807c6e8f" />
 
 
 ## Write your own, or start from an example
